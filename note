@@ -1,0 +1,54 @@
+import { create } from "node:domain"
+
+npm init -y
+
+npm nodemon -D
+
+npm create vite@latest.
+
+npm i react-router-dom  lucide-react react-hot-toast
+
+npm i @reduxjs/toolkit react-redux
+
+npm i axios
+
+"https://unsplash.com/photos/sunset-over-clouds-with-lens-flare-IQbxak4_XrM"
+"https://unsplash.com/photos/snow-capped-mountains-under-a-clear-blue-sky-0ss9O8n4DRw"
+"https://unsplash.com/photos/snow-covered-mountain-peak-under-a-clear-blue-sky-SA2Ar52uWdY"
+
+
+
+<div className='bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden border border-slate-100'>
+        <Link to={`/product/${product._id}`}>
+        <div>
+            <img src={product.images?.[0]?.url} alt={product.name} />
+        </div>
+        </Link>
+    </div>
+
+
+ import React from 'react'
+import { Link } from 'react-router-dom'
+
+ 
+const Product = ({product}) => {
+  return (
+    <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden border border-slate-100">
+      <Link to={`/product/${product._id}`}>
+        <div className="h-56 flex items-center justify-center p-4">
+          <img    
+            src={product.images[0]?.url}
+            alt={product.name}
+            className="w-full h-64 object-contain"
+            />
+        </div>
+      </Link>
+    </div>
+  )
+}
+
+export default Product   
+
+
+<p className="text-gray-500">₹{product.price}</p>
+
